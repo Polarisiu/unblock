@@ -18,7 +18,7 @@ while true; do
     echo -e "${GREEN}2. IP解锁-IPv6${RESET}"
     echo -e "${GREEN}3. 网络质量-IPv4${RESET}"
     echo -e "${GREEN}4. 网络质量-IPv6${RESET}"
-    echo -e "${RED}0.   退出${RESET}"
+    echo -e "${RED}0. 退出${RESET}"
     
     # 输入提示
     echo -ne "${GREEN}请选择操作: ${RESET}"
