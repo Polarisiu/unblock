@@ -25,10 +25,10 @@ while true; do
     read choice
 
     case $choice in
-        1) bash <(curl -Ls https://IP.Check.Place) -- -4 ;;
-        2) bash <(curl -Ls https://IP.Check.Place) -- -6 ;;
-        3) bash <(curl -Ls https://Net.Check.Place) -- -4 ;;
-        4) bash <(curl -Ls https://Net.Check.Place) -- -6 ;;
+        1) bash <(curl -Ls https://IP.Check.Place) -4 ;;
+        2) bash <(curl -Ls https://IP.Check.Place) -6 ;;
+        3) bash <(curl -Ls https://Net.Check.Place) -4 ;;
+        4) bash <(curl -Ls https://Net.Check.Place) -6 ;;
         0) echo -e "${RED}退出脚本${RESET}"; exit 0 ;;
         *) echo -e "${YELLOW}无效选择，请重新输入${RESET}" ;;
     esac
