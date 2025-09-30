@@ -13,8 +13,7 @@ menu() {
     echo -e "${GREEN}3) 国内机三网测速${RESET}"
     echo -e "${GREEN}4) 国内机三网延迟测试${RESET}"
     echo -e "${GREEN}0) 退出${RESET}"
-    echo
-    read -p $'\033[32m请选择操作 (0-4): \033[0m' choice
+    read -p $'\033[32m请选择操作: \033[0m' choice
     case $choice in
         1)
             bash <(wget -qO- bash.spiritlhl.net/ecs-net)
