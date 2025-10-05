@@ -22,11 +22,11 @@ while true; do
         2) bash <(curl -Ls https://IP.Check.Place) -6 ;;
         3) bash <(curl -Ls https://Net.Check.Place) -4 ;;
         4) bash <(curl -Ls https://Net.Check.Place) -6 ;;
-        0) echo -e "${RED}退出脚本${RESET}"; exit 0 ;;
+        0) exit 0 ;;
         *) echo -e "${YELLOW}无效选择，请重新输入${RESET}" ;;
     esac
 
     # 回车提示
-    echo -e "\n${GREEN}按回车键返回菜单...${RESET}"
+    echo -e "${GREEN}按回车键返回菜单...${RESET}"
     read
 done
